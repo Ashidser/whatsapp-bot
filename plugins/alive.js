@@ -7,7 +7,7 @@ const {
   FancyRandom,
   getListFromCommand,
   skbuffer
-} = require("raganork-bot");
+} = require("ashidser-bot");
 const {
   Module,
   commands
@@ -30,13 +30,13 @@ Module({
   var myid = message.client.user.id.split(":")[0]
   var buttons = [{
     urlButton: {
-        displayText: 'Github',
-        url: 'https://github.com/souravkl11/raganork'
+        displayText: 'instagram',
+        url: 'https://instagram.com/itz__me__ashid?igshid=YmMyMTA2M2Y=#'
     }
 }, {
   urlButton: {
     displayText: 'Contact Owner',
-    url: 'https://wa.me/'+BOT_INFO.split(";")[2]+'?text=Hey+bro'
+    url: 'https://wa.me/919778147249'?text=Hey+bro'
     }
 }, {
     quickReplyButton: {
@@ -54,10 +54,10 @@ Module({
         id: 'support'+myid
     }
 }]
-var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
+var menu = `╭═══〘 𝛥𝑆𝛨𝛪𝐷 𝑆𝛯𝑅 〙═══⊷❍
 ┃✩╭──────────────
 ┃✩│
-┃✩│ Owner : ${BOT_INFO.split(";")[1]}
+┃✩│ Owner : 𝛥𝑆𝛨𝛪𝐷 𝑆𝛯𝑅
 ┃✩│ User : ${message.senderName}
 ┃✩│ Mode : ${MODE}
 ┃✩│ Server : ${config.HEROKU.APP_NAME}
@@ -68,7 +68,7 @@ var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃✩│
 ┃✩│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
 ┃✩│  ▎▍▌▌▉▏▎▌▉▐▏▌▎
-┃✩│   ${BOT_INFO.split(";")[0]}
+┃✩│   𝛥𝑆𝛨𝛪𝐷 𝑆𝛯𝑅
 ┃✩│ 
 ┃✩╰───────────────
 ╰═════════════════⊷
@@ -108,7 +108,7 @@ var menu = `╭═══〘 ${BOT_INFO.split(";")[0]} 〙═══⊷❍
 ┃✩│ gif
 ┃✩╰─────────────────
 ╰══════════════════⊷❍`
-return await message.sendImageTemplate(await skbuffer(BOT_INFO.split(";")[3]),FancyRandom(menu),"All rights reserved "+BOT_INFO.split(";")[0],buttons);
+return await message.sendImageTemplate(await skbuffer(𝛥𝑆𝛨𝛪𝐷 𝑆𝛯𝑅),FancyRandom(menu),"All rights reserved "+𝛥𝑆𝛨𝛪𝐷 𝑆𝛯𝑅);
 }))
 Module({
   pattern: 'alive',
@@ -133,7 +133,7 @@ if (button) {
     const end = new Date().getTime()
     await message.sendReply(FancyRandom('Pong!\n ```' + (end - start) + '``` *ms*')) 
   }
-  if (button.includes(myid)&&button.startsWith("support")) return await message.sendReply(BOT_INFO.split(";")[4])
+  if (button.includes(myid)&&button.startsWith("support")) return await message.sendReply(𝛥𝑆𝛨𝛪𝐷 𝑆𝛯𝑅)
 } 
 }))
 Module({
